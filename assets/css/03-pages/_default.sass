@@ -1,0 +1,76 @@
+header
+  height: 110px
+  background-color: rgba($silver, .7)
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  position: fixed
+  -webkit-box-pack: justify
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+  -webkit-box-align: center
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+  width: 98%
+  padding:2%
+  transition: all .3s ease-in-out
+
+header.animated
+  height: 70px
+  background-color: rgba($white, .7)
+
+.logo img
+  transition: all 2s ease-in-out
+
+.logo.animated img
+  height: 50px
+
+.menu 
+  li
+    padding-right:15px
+    display: inline-block
+
+
+.section
+	height:440px
+	position:relative
+	z-index:-1
+
+.one
+  background-color: $teal
+
+.two
+  background-color: $silver
+
+.three
+  background-color: $maroon
+
+footer
+  background-color:$silver
+  height: auto
+  padding:2%
+
+@media screen and (max-width: 502px)
+  header
+    flex-direction:column
+    justify-content: center
+
+  .logo
+    margin-bottom: 10px
+
+  .logo.animated img
+     height: 40px
+
+  ul 
+    padding-left:0
+
+  .menu 
+    li
+      padding-right:0px
+
+
+
+
